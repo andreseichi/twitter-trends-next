@@ -48,7 +48,6 @@ export default function Home({ trendsResponse }: HomeProps): JSX.Element {
         <div className={styles.woeid}>
           <select
             name="trend-local"
-            id="trend-local"
             defaultValue={1}
             onChange={(e: ChangeEvent<HTMLSelectElement>) =>
               setWoeid(Number(e.target.value))
