@@ -1,0 +1,14 @@
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  background-color: rgb(17, 16, 16);
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    margin-left: 1.5rem;
+  }
+}
