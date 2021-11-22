@@ -20,7 +20,7 @@ interface HomeProps {
   trendsResponse: Trend[];
 }
 
-export default function Home({ trendsResponse }: HomeProps): JSX.Element {
+export default function Home(): JSX.Element {
   const [woeid, setWoeid] = useState(1);
   const [trends, setTrends] = useState<Trend[]>([]);
 
@@ -85,14 +85,14 @@ export default function Home({ trendsResponse }: HomeProps): JSX.Element {
   );
 }
 
-export const getStaticProps: GetStaticProps = async () => {
-  const { data } = await twitter.get('trends/place.json?id=1');
-  const { trends } = data[0];
+// export const getStaticProps: GetStaticProps = async () => {
+//   const { data } = await twitter.get('trends/place.json?id=1');
+//   const { trends } = data[0];
 
-  return {
-    props: {
-      trendsResponse: trends,
-    },
-    revalidate: 60, // 1 minute
-  };
-};
+//   return {
+//     props: {
+//       trendsResponse: trends,
+//     },
+//     revalidate: 60, // 1 minute
+//   };
+// };
