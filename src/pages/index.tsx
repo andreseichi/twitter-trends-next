@@ -22,7 +22,7 @@ interface HomeProps {
 
 export default function Home({ trendsResponse }: HomeProps): JSX.Element {
   const [woeid, setWoeid] = useState(1);
-  const [trends, setTrends] = useState<Trend[]>(trendsResponse);
+  const [trends, setTrends] = useState<Trend[]>([]);
 
   useEffect(() => {
     getTrends(woeid);
