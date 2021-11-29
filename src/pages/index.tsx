@@ -58,6 +58,7 @@ export default function Home(): JSX.Element {
             <option value="455820">Belém, BR</option>
             <option value="23424768">Brazil</option>
             <option value="23424856">Japan</option>
+            <option value="638242">Berlin, DE</option>
             <option value="2459115">New York, US</option>
             <option value="2442047">Los Angeles, US</option>
             <option value="44418">London, EN</option>
